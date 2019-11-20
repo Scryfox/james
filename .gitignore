@@ -1,0 +1,14 @@
+# Compiled Classes
+*.class
+
+# Targets
+target/
+
+# Project files
+.project
+
+# org files
+org.*
+
+# Class path file
+.classpath
