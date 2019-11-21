@@ -12,3 +12,6 @@ org.*
 
 # Class path file
 .classpath
+
+# VSCode settings
+.vscode
