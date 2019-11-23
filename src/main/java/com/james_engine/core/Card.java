@@ -4,6 +4,8 @@ import java.util.LinkedList;
 import java.util.Optional;
 import java.util.UUID;
 
+import com.james_engine.core.events.EventHandler;
+
 public class Card {
 
     private UUID id;
@@ -13,6 +15,9 @@ public class Card {
     LinkedList<Color> manaCost;
     Optional<Integer> cmc;
     String text;
+    private EventHandler eventHandler;
+
+    private LinkedList<Effect> appliedEffects;
 
     Card() {
 

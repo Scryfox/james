@@ -1,5 +1,7 @@
 package com.james_engine.core;
 
+import com.james_engine.core.events.EventHandler;
+
 /**
  * Turn
  */
@@ -7,6 +9,7 @@ package com.james_engine.core;
 public class Turn {
 
     private Player activePlayer;
+    private EventHandler eventHandler;
 
     public Turn() {
 
