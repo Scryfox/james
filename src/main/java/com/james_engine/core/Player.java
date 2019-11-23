@@ -10,6 +10,7 @@ public class Player {
     private Zone library;
     private Zone hand;
     private Zone graveyard;
+    private int turnNumber;
 
     public Player() {
 

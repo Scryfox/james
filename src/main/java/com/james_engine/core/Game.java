@@ -7,13 +7,16 @@ public class Game {
     private LinkedList<Player> players;
     private Zone battlefield;
     private Zone exile;
+    private int turnNumber;
 
     public Game() {
 
     }
 
-    public enum Format {
-        COMMANDER, STANDARD, PIONEER, LEGACY, MODERN, BRAWL, VINTAGE, HISTORIC, LIMITED
+    public Turn nextTurn() {
+
+        return null;
+
     }
 
 }
