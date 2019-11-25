@@ -10,16 +10,29 @@ public class Card {
 
     private UUID id;
     private String name;
-    Optional<Integer> power;
-    Optional<Integer> toughness;
-    LinkedList<Color> manaCost;
-    Optional<Integer> cmc;
-    String text;
+    private Optional<LinkedList<Color>> manaCost;
+    private Optional<SuperType> superType;
+    private Type type;
+    private String text;
+    private Player owner;
+    private Optional<Player> controller;
+    private Optional<Integer> power;
+    private Optional<Integer> toughness;
+    private Optional<Integer> loyalty;
+
     private EventHandler eventHandler;
 
     private LinkedList<Effect> appliedEffects;
 
     Card() {
+
+    }
+
+    public void applyEffect(Effect effect) {
+
+    }
+
+    public void removeEffect(Effect effect) {
 
     }
 

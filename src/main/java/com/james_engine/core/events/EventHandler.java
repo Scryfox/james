@@ -5,7 +5,10 @@ import java.util.LinkedList;
 import com.james_engine.core.Effect;
 
 /**
- * EventTrigger
+ * EventHandler is a singleton that other objects can call to obtain possible
+ * actions they can take and execute them. This centralizes events in a single
+ * place that allows outside classes to not worry about event hierarchy and what
+ * kinds of events can be generated under what circumstances.
  */
 public class EventHandler {
 
@@ -17,6 +20,10 @@ public class EventHandler {
 
     }
 
+    /*
+     * EventHandler should be a singleton, handles all effects that are generated
+     * throughout the game
+     */
     public static EventHandler EventHandler() {
         if (eventHandler == null) {
             eventHandler = new EventHandler();
@@ -34,6 +41,10 @@ public class EventHandler {
     }
 
     public void registerEffectWithEvent(Event event, Effect effect) {
+
+    }
+
+    public void removeEffect(Effect effect) {
 
     }
 

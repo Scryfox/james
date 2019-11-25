@@ -12,19 +12,30 @@ public class Game {
     private int turnNumber;
     private LinkedList<Turn> turns;
     private LinkedList<Ability> abilities;
+
     private EventHandler eventHandler;
 
     public Game() {
 
     }
 
-    public Turn nextTurn() {
+    public void begin() {
 
-        return null;
+        /*
+         * Scan cards involved in game for possible events that could take place.
+         * Development of system to scan cards for events should be created. Scanner
+         * could run statically over cards or dynamically as they are loaded
+         */
 
     }
 
-    public void begin() {
+    public void end() {
+
+    }
+
+    public Turn nextTurn() {
+
+        return null;
 
     }
 

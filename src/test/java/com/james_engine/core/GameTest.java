@@ -1,20 +1,26 @@
 package com.james_engine.core;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Nested;
+import org.junit.jupiter.api.Test;
 
 public class GameTest {
 
     Game testGame;
 
-    @Before
+    @BeforeEach
     public void setUpGame() {
         testGame = new Game();
     }
 
-    @Test
-    public void thisIsATest() {
-        assert (true);
+    @Nested
+    public class start {
+
+        @Test
+        void shouldEndInPreGameActionsStep() {
+            assert (true);
+        }
+
     }
 
 }
