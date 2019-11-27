@@ -19,6 +19,10 @@ public class Game {
 
     }
 
+    public void setUp() {
+
+    }
+
     public void begin() {
 
         /*
