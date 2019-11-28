@@ -1,5 +1,6 @@
 package com.james_engine.core;
 
+import java.util.LinkedList;
 import java.util.Optional;
 
 import com.james_engine.core.events.EventHandler;
@@ -29,6 +30,10 @@ public class Player {
      */
     public Action takeAction() {
         // TODO: Poll Input for a decision on what to do
+        return null;
+    }
+
+    public Object choose(LinkedList<Object> choices) {
         return null;
     }
 
