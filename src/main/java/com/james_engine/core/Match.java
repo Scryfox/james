@@ -10,6 +10,14 @@ public class Match {
 
     }
 
+    public void begin() {
+
+    }
+
+    public void end() {
+
+    }
+
     public enum Format {
         COMMANDER, STANDARD, PIONEER, LEGACY, MODERN, BRAWL, VINTAGE, HISTORIC, LIMITED
     }

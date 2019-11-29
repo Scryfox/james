@@ -1,4 +1,4 @@
-package com.james_engine.core;
+package com.james_engine.core.integration;
 
 import org.junit.jupiter.api.Test;
 

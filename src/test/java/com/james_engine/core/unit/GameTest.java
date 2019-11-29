@@ -1,7 +1,8 @@
-package com.james_engine.core;
+package com.james_engine.core.unit;
 
 import static org.mockito.Mockito.mock;
 
+import com.james_engine.core.Game;
 import com.james_engine.core.events.EventHandler;
 
 import org.junit.jupiter.api.BeforeEach;

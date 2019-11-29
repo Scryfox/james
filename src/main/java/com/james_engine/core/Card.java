@@ -10,7 +10,7 @@ public class Card {
 
     private UUID id;
     private String name;
-    private Optional<LinkedList<Color>> manaCost;
+    private Optional<LinkedList<ManaType>> manaCost;
     private Optional<SuperType> superType;
     private Type type;
     private String text;
@@ -45,6 +45,10 @@ public class Card {
     }
 
     public enum Color {
+        BLUE, GREEN, WHITE, RED, BLACK
+    }
+
+    public enum ManaType {
         BLUE, GREEN, WHITE, RED, BLACK, COLORLESS, GENERIC
     }
 

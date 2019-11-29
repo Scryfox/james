@@ -1,4 +1,4 @@
-package com.james_engine.core;
+package com.james_engine.core.unit;
 
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
@@ -30,6 +30,16 @@ public class PlayerTest {
 
     @Nested
     public class choose {
+
+    }
+
+    @Nested
+    class canPayCost {
+
+        @Test
+        public void shouldReturnTrueIfSpellCosts0() {
+
+        }
 
     }
 

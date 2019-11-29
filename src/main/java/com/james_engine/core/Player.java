@@ -37,6 +37,10 @@ public class Player {
         return null;
     }
 
+    public boolean canPayCost(Card card) {
+        return false;
+    }
+
     public void play(Card card) {
 
     }
