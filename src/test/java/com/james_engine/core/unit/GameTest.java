@@ -68,6 +68,16 @@ public class GameTest {
     }
 
     @Nested
+    public class addPlayer {
+
+    }
+
+    @Nested
+    public class removePlayer {
+
+    }
+
+    @Nested
     public class nextTurn {
 
         @Test

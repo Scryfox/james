@@ -67,4 +67,14 @@ public class PlayerTest {
     public class activate {
 
     }
+
+    @Nested
+    public class mulligan {
+
+    }
+
+    @Nested
+    public class concede {
+
+    }
 }

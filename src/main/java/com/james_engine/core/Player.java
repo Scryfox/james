@@ -49,6 +49,14 @@ public class Player {
 
     }
 
+    public void mulligan() {
+
+    }
+
+    public void concede() {
+
+    }
+
     /*
      * Represents the expected methods for a system to provide to create a link
      * between an outside "player" and the Player class
@@ -61,7 +69,7 @@ public class Player {
      * Possible actions a player can take when given priority
      */
     public enum Action {
-        PASS, ACTIVATE, PLAY
+        PASS, ACTIVATE, PLAY, CONCEDE
     }
 
 }

@@ -31,4 +31,9 @@ public class EventHandlerTest {
     public class removeEvent {
 
     }
+
+    @Nested
+    public class reset {
+
+    }
 }

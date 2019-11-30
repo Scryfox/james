@@ -11,8 +11,8 @@ public class Card {
     private UUID id;
     private String name;
     private Optional<LinkedList<ManaType>> manaCost;
-    private Optional<SuperType> superType;
-    private Type type;
+    private Optional<LinkedList<SuperType>> superType;
+    private LinkedList<Type> type;
     private String text;
     private Player owner;
     private Optional<Player> controller;
@@ -20,7 +20,7 @@ public class Card {
     private Optional<Integer> toughness;
     private Optional<Integer> loyalty;
 
-    private EventHandler eventHandler;
+    private EventHandler eventHandler = EventHandler.EventHandler();
 
     private LinkedList<Effect> appliedEffects;
 

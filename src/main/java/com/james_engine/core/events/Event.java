@@ -11,6 +11,6 @@ class Event {
 
     private String name;
     private Object owner;
-    private LinkedList<Effect> triggeredEffects;
+    private LinkedList<Effect> registeredEffects;
 
 }

@@ -13,7 +13,7 @@ public class Game {
     private LinkedList<Turn> turns;
     private LinkedList<Ability> abilities;
 
-    private EventHandler eventHandler;
+    private EventHandler eventHandler = EventHandler.EventHandler();
 
     public Game() {
 
@@ -33,7 +33,20 @@ public class Game {
 
     }
 
-    public void end() {
+    /*
+     * Returns the winner of the game, or no player if a draw is reached
+     * 
+     * @return winner The player that won the game
+     */
+    public Player end() {
+        return null;
+    }
+
+    public void addPlayer() {
+
+    }
+
+    public void removePlayer() {
 
     }
 

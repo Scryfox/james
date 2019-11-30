@@ -52,4 +52,8 @@ public class EventHandler {
 
     }
 
+    public void reset() {
+
+    }
+
 }
