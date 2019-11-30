@@ -9,7 +9,7 @@ import java.util.UUID;
 public class Effect {
 
     private UUID id;
-    private LinkedList<Card> affecting;
+    private LinkedList<Object> affecting;
 
     Effect() {
 

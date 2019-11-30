@@ -1,0 +1,53 @@
+---
+- zoneChange:
+      constraints:
+          - card
+
+      parameters:
+          - src
+          - dest
+
+- draw:
+      components:
+          - zoneChange:
+                src: library
+                dest: hand
+
+- exile:
+      components:
+          - zoneChange:
+                src:
+                    - hand
+                    - battlefield
+                    - graveyard
+                    - library
+                dest:
+                    - exile
+
+- die:
+      constraints:
+          - card:
+                type:
+                    - creature
+      components:
+          - zoneChange:
+                src: battlefield
+                dest: graveyard
+
+- damage
+
+- deals damage:
+      constraints:
+          - card:
+                type:
+                    - creature
+      components:
+          - damage
+- dealt damage:
+      constraints:
+          - card:
+                type:
+                    - creature
+          - player
+      components:
+          - damage
