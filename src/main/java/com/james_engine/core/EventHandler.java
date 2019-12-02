@@ -1,8 +1,7 @@
-package com.james_engine.core.events;
+package com.james_engine.core;
 
 import java.util.LinkedList;
-
-import com.james_engine.core.Effect;
+import java.util.Observable;
 
 /**
  * EventHandler is a singleton that other objects can call to obtain possible
@@ -10,26 +9,13 @@ import com.james_engine.core.Effect;
  * place that allows outside classes to not worry about event hierarchy and what
  * kinds of events can be generated under what circumstances.
  */
-public class EventHandler {
+class EventHandler extends Observable {
 
     private LinkedList<Event> registeredEvents;
     private LinkedList<Event> possibleEvents;
-    private static EventHandler eventHandler = null;
 
-    private EventHandler() {
+    public EventHandler() {
 
-    }
-
-    /*
-     * EventHandler should be a singleton, handles all effects that are generated
-     * throughout the game
-     */
-    public static EventHandler EventHandler() {
-        if (eventHandler == null) {
-            eventHandler = new EventHandler();
-        }
-
-        return eventHandler;
     }
 
     public Event getEvent(String name) {

@@ -4,8 +4,6 @@ import java.util.LinkedList;
 import java.util.Optional;
 import java.util.UUID;
 
-import com.james_engine.core.events.EventHandler;
-
 public class Card {
 
     private UUID id;
@@ -20,7 +18,7 @@ public class Card {
     private Optional<Integer> toughness;
     private Optional<Integer> loyalty;
 
-    private EventHandler eventHandler = EventHandler.EventHandler();
+    private EventHandler eventHandler;
 
     private LinkedList<Effect> appliedEffects;
 

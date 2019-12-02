@@ -3,8 +3,6 @@ package com.james_engine.core;
 import java.util.LinkedList;
 import java.util.Optional;
 
-import com.james_engine.core.events.EventHandler;
-
 public class Player {
 
     private String name;

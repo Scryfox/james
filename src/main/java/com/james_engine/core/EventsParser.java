@@ -1,4 +1,4 @@
-package com.james_engine.core.events;
+package com.james_engine.core;
 
 /**
  * EventsParser

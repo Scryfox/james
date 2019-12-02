@@ -5,6 +5,7 @@ import java.util.LinkedList;
 public class Match {
 
     private LinkedList<Game> games;
+    private EventHandler eventHandler;
 
     public Match() {
 
@@ -12,15 +13,6 @@ public class Match {
 
     public void begin() {
 
-    }
-
-    /*
-     * Returns the winner of the game, or no player if a draw is reached
-     * 
-     * @return winner The player that won the game
-     */
-    public Player end() {
-        return null;
     }
 
     public enum Format {

@@ -1,6 +1,5 @@
 package com.james_engine.core;
 
-import java.util.LinkedList;
 import java.util.UUID;
 
 /**
@@ -9,9 +8,16 @@ import java.util.UUID;
 public class Effect {
 
     private UUID id;
-    private LinkedList<Object> affecting;
 
     Effect() {
+
+    }
+
+    public boolean applies(final Object obj) {
+        return false;
+    }
+
+    public void applyEffect() {
 
     }
 
