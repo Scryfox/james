@@ -54,8 +54,31 @@ public class Game {
         while (currentStep != null) {
 
             switch (currentStep) {
+            // Each case calls the event that signifies the start of that phase
 
             case UNTAP:
+                break;
+            case UPKEEP:
+                break;
+            case DRAW:
+                break;
+            case PRE_COMBAT_MAIN:
+                break;
+            case BEGINNING_OF_COMBAT:
+                break;
+            case DECLARE_ATTACKERS:
+                break;
+            case DECLARE_BLOCKERS:
+                break;
+            case COMBAT_DAMAGE:
+                break;
+            case END_OF_COMBAT:
+                break;
+            case POST_COMBAT_MAIN:
+                break;
+            case END:
+                break;
+            case CLEANUP:
                 break;
             default:
                 break;
